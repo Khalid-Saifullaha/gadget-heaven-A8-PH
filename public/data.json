@@ -1,0 +1,162 @@
+[
+  {
+    "product_id": "1",
+    "product_title": "Gaming Laptop",
+    "product_image": "https://i.ibb.co.com/QPwrdNR/asus-rog-strix-g16-g614jir-intel-core-i9-14900hx-11729340015.webp",
+    "category": "Computers",
+    "price": 1200,
+    "description": "High-performance gaming laptop with powerful graphics card and fast processor.",
+    "specification": [
+      { "feature": "Processor", "value": "Intel i7" },
+      { "feature": "RAM", "value": "16GB" },
+      { "feature": "Graphics Card", "value": "NVIDIA RTX 3060" }
+    ],
+    "availability": true,
+    "rating": 4.8,
+    "brand": "PowerTech"
+  },
+  {
+    "product_id": "2",
+    "product_title": "Ultra-Slim Laptop",
+    "product_image": "https://i.ibb.co.com/6ZSg9Tj/swift-go-14-sfg14-41-r3fa-01-500x500.webp",
+    "category": "Computers",
+    "price": 900,
+    "description": "Lightweight laptop with powerful performance and long battery life.",
+    "specification": [
+      { "feature": "Processor", "value": "AMD Ryzen 5" },
+      { "feature": "RAM", "value": "8GB" },
+      { "feature": "Battery Life", "value": "12 hours" }
+    ],
+    "availability": true,
+    "rating": 4.5,
+    "brand": "SlimNote"
+  },
+  {
+    "product_id": "3",
+    "product_title": "All-in-One Desktop",
+    "product_image": "https://i.ibb.co.com/DDr75s7/images.jpg",
+    "category": "Computers",
+    "price": 750,
+    "description": "Compact all-in-one desktop with large display and fast performance.",
+    "specification": [
+      { "feature": "Screen Size", "value": "27 inches" },
+      { "feature": "Processor", "value": "Intel i5" },
+      { "feature": "Storage", "value": "1TB SSD" }
+    ],
+    "availability": false,
+    "rating": 4.4,
+    "brand": "DeskPlus"
+  },
+  {
+    "product_id": "4",
+    "product_title": "Flagship Smartphone",
+    "product_image": "https://i.ibb.co.com/nQWvVW1/Galaxy-S24-Ultra-Titanium-Black-1587.jpg",
+    "category": "Phones",
+    "price": 850,
+    "description": "Latest smartphone with advanced camera system and high-resolution display.",
+    "specification": [
+      { "feature": "Camera", "value": "48MP Triple Lens" },
+      { "feature": "Battery", "value": "4000mAh" },
+      { "feature": "Screen Size", "value": "6.5 inches" }
+    ],
+    "availability": true,
+    "rating": 4.7,
+    "brand": "SmartMax"
+  },
+  {
+    "product_id": "5",
+    "product_title": "Budget Smartphone",
+    "product_image": "https://i.ibb.co.com/5GkbQ4T/Samsung-Galaxy-A15-5-G.webp",
+    "category": "Phones",
+    "price": 250,
+    "description": "Affordable smartphone with decent camera and good battery life.",
+    "specification": [
+      { "feature": "Camera", "value": "16MP Dual Lens" },
+      { "feature": "Battery", "value": "3000mAh" },
+      { "feature": "Screen Size", "value": "5.8 inches" }
+    ],
+    "availability": true,
+    "rating": 4.3,
+    "brand": "EcoPhone"
+  },
+  {
+    "product_id": "6",
+    "product_title": "Mid-Range Smartphone",
+    "product_image": "https://i.ibb.co.com/jHNhzC4/bf193b-main.webp",
+    "category": "Phones",
+    "price": 500,
+    "description": "Mid-range smartphone with impressive display and performance.",
+    "specification": [
+      { "feature": "Camera", "value": "32MP" },
+      { "feature": "Battery", "value": "3500mAh" },
+      { "feature": "Screen Size", "value": "6.0 inches" }
+    ],
+    "availability": false,
+    "rating": 4.5,
+    "brand": "OptiPhone"
+  },
+  {
+    "product_id": "7",
+    "product_title": "Fitness Smartwatch",
+    "product_image": "https://i.ibb.co.com/vk3jcf1/6563baa35d2bfd3a8803111f-smart-watch-fits-for-android-and-iphone.jpg",
+    "category": "Smart Watches",
+    "price": 150,
+    "description": "Fitness-focused smartwatch with heart rate monitor and GPS.",
+    "specification": [
+      { "feature": "Battery Life", "value": "7 days" },
+      { "feature": "Heart Rate Monitor", "value": "Yes" },
+      { "feature": "Water Resistance", "value": "IP68" }
+    ],
+    "availability": true,
+    "rating": 4.6,
+    "brand": "FitPro"
+  },
+  {
+    "product_id": "8",
+    "product_title": "Luxury Smartwatch",
+    "product_image": "https://i.ibb.co.com/qkCKTNv/fire-boltt-1-6-inch-hd-round-display-stainless-steel-luxury-smartwatch-500x500.webp",
+    "category": "Smart Watches",
+    "price": 300,
+    "description": "Elegant smartwatch with customizable watch faces and health tracking features.",
+    "specification": [
+      { "feature": "Battery Life", "value": "5 days" },
+      { "feature": "Heart Rate Monitor", "value": "Yes" },
+      { "feature": "Screen Type", "value": "AMOLED" }
+    ],
+    "availability": true,
+    "rating": 4.8,
+    "brand": "EliteTime"
+  },
+  {
+    "product_id": "9",
+    "product_title": "Budget Smartwatch",
+    "product_image": "https://i.ibb.co.com/LCfbsNr/B0-CDC5-N38-P-1866375683938583931-1724908301169.jpg",
+    "category": "Smart Watches",
+    "price": 100,
+    "description": "Affordable smartwatch with essential health monitoring features.",
+    "specification": [
+      { "feature": "Battery Life", "value": "10 days" },
+      { "feature": "Water Resistance", "value": "IP67" },
+      { "feature": "Screen Type", "value": "LCD" }
+    ],
+    "availability": false,
+    "rating": 4.2,
+    "brand": "TimeKeeper"
+  },
+  {
+    "product_id": "10",
+    "product_title": "Advanced Sports Watch",
+    "product_image": "https://i.ibb.co.com/hD0MYTT/fenix-7s-pro-sapphire-carbongray-cf-lg.webp",
+    "category": "Smart Watches",
+    "price": 200,
+    "description": "Smartwatch designed for sports enthusiasts with GPS and heart rate monitor.",
+    "specification": [
+      { "feature": "Battery Life", "value": "8 days" },
+      { "feature": "GPS", "value": "Yes" },
+      { "feature": "Heart Rate Monitor", "value": "Yes" }
+    ],
+    "availability": true,
+    "rating": 4.5,
+    "brand": "ActiveWatch"
+  }
+]
