@@ -6,7 +6,7 @@ const MainLayout = () => {
   return (
     <div>
       <Navbar></Navbar>
-      <div className="min-h-[calc(100vh-232px)]  container mx-auto ">
+      <div className="container mx-auto px-2 min-h-[calc(100vh-548px)] ">
         <Outlet></Outlet>
       </div>
       <Footer></Footer>
