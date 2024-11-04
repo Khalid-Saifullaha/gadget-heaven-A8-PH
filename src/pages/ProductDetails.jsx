@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import { IoMdCart } from "react-icons/io";
+import { FaRegHeart } from "react-icons/fa";
 
 const ProductDetails = () => {
   const { productname } = useParams();
@@ -63,9 +64,14 @@ const ProductDetails = () => {
             <p className="font-semibold">Rating</p>
             <p>{rating}</p>
 
-            <button className="border-2 px-6 py-2 rounded-full border-purple-700 bg-[#9538E2] text-white flex items-center gap-2">
-              Add to Cart <IoMdCart />
-            </button>
+            <div className="flex gap-10">
+              <button className="border-2 px-6 py-2 rounded-full border-purple-700 bg-[#9538E2] text-white flex items-center gap-2">
+                Add to Cart <IoMdCart />
+              </button>
+              <button>
+                <FaRegHeart className="text-2xl"></FaRegHeart>
+              </button>
+            </div>
           </div>
         </div>
       </div>
