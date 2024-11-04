@@ -1,22 +1,40 @@
 import { createBrowserRouter } from "react-router-dom";
 import MainLayout from "../layouts/MainLayout";
 import Home from "../pages/Home";
-import Dashboard from "../pages/Dashboard";
-import Statistics from "../pages/Statistics";
 import ErrorPage from "../pages/ErrorPage";
-import Products from "../pages/Products";
+import Statistics from "../pages/Statistics";
+import Dashboard from "../pages/Dashboard";
+import ProductCards from "../components/ProductCards";
 import ProductDetails from "../pages/ProductDetails";
 
-const router = createBrowserRouter([
+const routes = createBrowserRouter([
   {
     path: "/",
-    element: <MainLayout></MainLayout>,
-    errorElement: <ErrorPage></ErrorPage>,
+    element: <MainLayout />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",
-        element: <Home></Home>,
+        element: <Home />,
         loader: () => fetch("../categories.json"),
+        children: [
+          {
+            path: "/",
+            element: <ProductCards />,
+            loader: () => fetch("../products.json"),
+          },
+          {
+            path: "category/:category",
+            element: <ProductCards />,
+            loader: ({ params }) =>
+              fetch(`../products.json?category=${params.category}`),
+          },
+        ],
+      },
+      {
+        path: "/productdetails/:productname",
+        element: <ProductDetails></ProductDetails>,
+        loader: () => fetch("products.json"),
       },
       {
         path: "statistics",
@@ -29,4 +47,5 @@ const router = createBrowserRouter([
     ],
   },
 ]);
-export default router;
+
+export { routes };
