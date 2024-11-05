@@ -6,13 +6,13 @@ const Navbar = () => {
   const navbarLinks = (
     <>
       <li>
-        <NavLink to={"/"}>Home</NavLink>
+        <NavLink to={`/`}>Home</NavLink>
       </li>
       <li>
-        <NavLink to={"/statistics"}>Statistics</NavLink>
+        <NavLink to={`/statistics`}>Statistics</NavLink>
       </li>
       <li>
-        <NavLink to={"/dashboard"}>Dashboard</NavLink>
+        <NavLink to={`dashboard`}>Dashboard</NavLink>
       </li>
     </>
   );
@@ -54,11 +54,15 @@ const Navbar = () => {
             {navbarLinks}
           </ul>
         </div>
-        <div className="navbar-end text-2xl gap-4 text-white">
-          <NavLink className={"bg-slate-600 p-3 rounded-full"}>
+        <div className="navbar-end text-2xl gap-4 text-white relative">
+          <div className="absolute right-16 bottom-8 text-red-500 bg-white px-1 rounded-full text-sm font-semibold">
+            <p>0</p>
+          </div>
+          <NavLink to="/dashboard" className={`bg-blue-500 p-3 rounded-full`}>
             <IoMdCart />
           </NavLink>
-          <NavLink className={"bg-slate-600 p-3 rounded-full"}>
+
+          <NavLink className={`bg-blue-500 p-3 rounded-full`}>
             <FaRegHeart />
           </NavLink>
         </div>

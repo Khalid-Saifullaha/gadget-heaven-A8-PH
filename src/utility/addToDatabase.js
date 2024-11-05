@@ -18,7 +18,7 @@ const addToStoredList = (id) => {
     storedList.push(id);
     const storedListStr = JSON.stringify(storedList);
     localStorage.setItem("product-list", storedListStr);
-    toast.success("This book is added to your read list.");
+    toast.success("This product add to card.");
   }
 };
 
