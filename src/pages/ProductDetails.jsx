@@ -4,6 +4,7 @@ import { IoMdCart } from "react-icons/io";
 import { FaRegHeart } from "react-icons/fa";
 import { addToStoredList, addToStoredWishList } from "../utility/addToDatabase";
 import { toast } from "react-toastify";
+import Heading from "../components/Heading";
 
 const ProductDetails = () => {
   const { productname } = useParams();
@@ -43,6 +44,13 @@ const ProductDetails = () => {
 
   return (
     <div>
+      <div className="bg-[#9538E2] text-white h-56">
+        <Heading title={"Product Details"}></Heading>
+        <p className="text-white">
+          Explore the latest gadgets that will take your experience to the next
+          level. From smart devices to the coolest accessories, we have it all!
+        </p>
+      </div>
       <div className="hero bg-white p-8 rounded-xl">
         <div className="hero-content flex-col  lg:flex-row">
           <img
