@@ -20,11 +20,11 @@ const WishlistPage = ({ allProducts }) => {
 
   const handleRemoveFromCart = (product_id) => {
     const updatedCartList = cartList.filter(
-      (product) => product.product_id !== product_id
+      (product) => product.product_id !== product_id,
+      toast.error("This product remove the WishList ")
     );
 
     setCartList(updatedCartList);
-    toast.error("This product remove the WishList ");
     const updatedStoredList = updatedCartList.map(
       (product) => product.product_id
     );
