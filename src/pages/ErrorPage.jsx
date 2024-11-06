@@ -1,10 +1,13 @@
 const ErrorPage = () => {
   return (
-    <div className="grid place-content-center h-screen">
-      <h3 className="text-6xl font-bold">404 not found</h3>
-      <p className="text-lg mb-8">
-        Oops! The page you’re looking for doesn’t exist.
+    <div className="text-center my-32">
+      <h1 className="text-5xl font-medium">404</h1>
+      <p className="text-xl my-4">
+        Oops! The page you are looking for does not exist.
       </p>
+      <a href="/" className="text-blue-500">
+        Go to Home
+      </a>
     </div>
   );
 };
