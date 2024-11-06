@@ -8,14 +8,14 @@ const Home = () => {
   return (
     <div>
       {/* Header Section Starts */}
-      <div className="relative">
+      <div className="relative ">
         <HeroBanner></HeroBanner>
         <div className="absolute top-3/4">
           <HeroBannerImg></HeroBannerImg>
         </div>
       </div>
       {/* Header Section End */}
-      <div className="mt-96">
+      <div className="hero-content">
         <Heading title={`Explore Cutting-Edge Gadgets`}></Heading>
       </div>
 
