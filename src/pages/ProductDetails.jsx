@@ -46,7 +46,7 @@ const ProductDetails = () => {
     <div>
       <div className="bg-[#9538E2] text-white h-56">
         <Heading title={"Product Details"}></Heading>
-        <p className="text-white">
+        <p className="text-white text-center">
           Explore the latest gadgets that will take your experience to the next
           level. From smart devices to the coolest accessories, we have it all!
         </p>

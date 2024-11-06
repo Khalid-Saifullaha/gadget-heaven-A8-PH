@@ -47,7 +47,7 @@
     "product_id": "5",
     "product_title": "Sony PlayStation 5",
     "product_image": "https://i.ibb.co.com/P5zFJbq/T6-ITWT5-R6-MZFo6l0k0-BOBl-G1me-K7-ZCAQ2-A22o-Nz-F.jpg",
-    "category": "Gaming Console",
+    "category": "Accessories",
     "price": 499.99,
     "description": "Next-gen PlayStation 5 with ultra-fast SSD and 4K gaming.",
     "Specification": ["Ultra-fast SSD", "4K Gaming", "Ray Tracing"],
@@ -111,8 +111,8 @@
   },
   {
     "product_id": "11",
-    "product_title": "Bose QuietComfort Earbuds II",
-    "product_image": " https://i.ibb.co.com/0Z0fN3D/haylou-w1-white-500x500.jpg",
+    "product_title": "GEH Wireless Air bads Wireless Air bads  (White)",
+    "product_image": "https://i.ibb.co.com/QQfw0by/wireless-air-bads-geh-original-imagpehbc7bfaykg.webp",
     "category": "Accessories",
     "price": 299.99,
     "description": "Wireless noise-cancelling earbuds with premium sound quality.",
@@ -124,7 +124,7 @@
   {
     "product_id": "12",
     "product_title": "Asus ROG Strix Scar 15",
-    "product_image": " https://i.ibb.co.com/jHFpQTc/rog-strix-g15-g513qm-01-500x500.jpg ",
+    "product_image": " https://i.ibb.co.com/QPwrdNR/asus-rog-strix-g16-g614jir-intel-core-i9-14900hx-11729340015.webp ",
     "category": "Laptop",
     "price": 1899.99,
     "description": "15.6-inch gaming laptop with AMD Ryzen 9, 32GB RAM, and RTX 3070 Ti.",
@@ -134,9 +134,9 @@
   },
   {
     "product_id": "13",
-    "product_title": "Nintendo Switch OLED",
-    "product_image": "https://i.ibb.co.com/0j1DKZB/nintendo-switch-oled-model-white-set-01-500x500.webp ",
-    "category": "Gaming Console",
+    "product_title": "Sony PS5",
+    "product_image": "https://i.ibb.co.com/x7KtnyV/0040317-sony-ps5-playstation-5-slim-edition-4k-120hz-gaming-console-with-dualsense-wireless-controll.jpg",
+    "category": "Accessories",
     "price": 349.99,
     "description": "Handheld gaming console with 7-inch OLED display and 64GB storage.",
     "Specification": ["7-inch OLED", "64GB storage", "Enhanced audio"],
@@ -156,8 +156,8 @@
   },
   {
     "product_id": "15",
-    "product_title": "Apple MacBook Pro 16 M1 Max",
-    "product_image": " https://i.ibb.co.com/wB91Dwq/macbook-pro-16-inch-silver-02-500x500.webp",
+    "product_title": "MacBook Air 15 M3",
+    "product_image": "https://i.ibb.co.com/GFCbMdQ/Apple-Mac-Book-Air-15-M3-2024-price-in-Bangladesh-MC-Solution-BD-1200x900.webp",
     "category": "MacBook",
     "price": 3499.99,
     "description": "16-inch MacBook Pro with M1 Max chip, 32GB RAM, and 1TB SSD.",
@@ -168,8 +168,8 @@
 
   {
     "product_id": "16",
-    "product_title": "Samsung Galaxy Watch 5 Pro",
-    "product_image": "https://i.ibb.co.com/xFHY4cr/galaxy-watch6-bluetooth-44mm-01-500x500.webp ",
+    "product_title": "Digital watch",
+    "product_image": "https://i.ibb.co.com/vk3jcf1/6563baa35d2bfd3a8803111f-smart-watch-fits-for-android-and-iphone.jpg ",
     "category": "Smart Watch",
     "price": 449.99,
     "description": "Premium smartwatch with advanced fitness tracking and LTE support.",
@@ -181,7 +181,7 @@
     "product_id": "17",
     "product_title": "Sony PlayStation 5 Digital Edition",
     "product_image": "https://i.ibb.co.com/fvjxb6w/dualsense-500x500.jpg ",
-    "category": "Gaming Console",
+    "category": "Accessories",
     "price": 399.99,
     "description": "PlayStation 5 Digital Edition for disc-free 4K gaming experience.",
     "Specification": ["4K gaming", "120fps support", "Digital-only console"],
@@ -202,7 +202,7 @@
   {
     "product_id": "19",
     "product_title": "HP Spectre x360 14",
-    "product_image": " https://i.ibb.co.com/fvKp7pN/14-e2027tu-01-500x500.webp",
+    "product_image": "https://i.ibb.co.com/1s80v9h/Microsoft-Surface-Laptop-5-15-Black-Metal-Price-in-bangladesh-MC-Solution-BD-1.webp",
     "category": "Laptop",
     "price": 1449.99,
     "description": "14-inch convertible laptop with Intel Core i7, 16GB RAM, and 1TB SSD.",
@@ -228,8 +228,8 @@
   },
   {
     "product_id": "21",
-    "product_title": "Razer Blade 15 Advanced",
-    "product_image": "https://i.ibb.co.com/TqwJqzf/ideapad-slim-3i-01-228x228.webp ",
+    "product_title": "Lenovo m6",
+    "product_image": "https://i.ibb.co.com/6ZSg9Tj/swift-go-14-sfg14-41-r3fa-01-500x500.webp ",
     "category": "Laptop",
     "price": 2499.99,
     "description": "15.6-inch gaming laptop with Intel Core i7, RTX 3070, and 16GB RAM.",
@@ -258,16 +258,5 @@
     "Specification": ["M1 Pro chip", "16GB RAM", "512GB SSD"],
     "availability": true,
     "rating": 4.8
-  },
-  {
-    "product_id": "24",
-    "product_title": "Google Pixel Watch",
-    "product_image": "https://i.ibb.co.com/Pjkf7kt/band-9-black-01-500x500.webp ",
-    "category": "Smart Watch",
-    "price": 349.99,
-    "description": "Google's first smartwatch with Wear OS and seamless Pixel integration.",
-    "Specification": ["Wear OS", "Heart rate tracking", "Google Assistant"],
-    "availability": true,
-    "rating": 4.5
   }
 ]
