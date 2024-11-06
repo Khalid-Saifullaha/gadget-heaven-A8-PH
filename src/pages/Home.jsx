@@ -15,7 +15,7 @@ const Home = () => {
         </div>
       </div>
       {/* Header Section End */}
-      <div className="hero-content">
+      <div className="mt-96">
         <Heading title={`Explore Cutting-Edge Gadgets`}></Heading>
       </div>
 

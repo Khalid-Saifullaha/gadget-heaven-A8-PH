@@ -1,8 +1,8 @@
 const HeroBanner = () => {
   return (
     <div>
-      <div className="hero bg-[#9538E2] rounded-b-3xl py-20 ">
-        <div className="hero-content text-center  text-white">
+      <div className="hero mx-auto bg-[#9538E2] rounded-b-3xl py-20 ">
+        <div className="hero-content mx-auto text-center  text-white">
           <div className="max-w-md">
             <h1 className="text-4xl font-bold">
               Upgrade Your Tech Accessorize with Gadget Heaven Accessories
