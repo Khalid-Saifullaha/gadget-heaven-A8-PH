@@ -71,13 +71,16 @@ const Navbar = () => {
           <div className="absolute right-16 bottom-8 text-red-500 bg-white px-2 rounded-full text-sm font-semibold">
             <p>{cartCount.length}</p>
           </div>
-          <NavLink to="/dashboard" className={`bg-blue-500 p-3 rounded-full`}>
+          <NavLink to="/dashboard" className={`bg-purple-600 p-3 rounded-full`}>
             <IoMdCart />
           </NavLink>
           <div className="absolute bottom-8 text-red-500 bg-white px-2 rounded-full text-sm font-semibold">
             <p>{wishListCount.length}</p>
           </div>
-          <NavLink to={"/dashboard"} className={`bg-blue-500 p-3 rounded-full`}>
+          <NavLink
+            to={"/dashboard"}
+            className={`bg-purple-600 p-3 rounded-full`}
+          >
             <FaRegHeart />
           </NavLink>
         </div>

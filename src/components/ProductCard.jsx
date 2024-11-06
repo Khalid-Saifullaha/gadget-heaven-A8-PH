@@ -17,7 +17,7 @@ const ProductCard = ({ product }) => {
         </figure>
         <div className="card-body items-center text-center">
           <h2 className="card-title">{product_title}</h2>
-          <p>Price: {price} k</p>
+          <p>Price: ${price} </p>
           <div className="card-actions">
             <button
               onClick={handleBuyNow}
