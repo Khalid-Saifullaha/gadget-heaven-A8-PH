@@ -1,10 +1,13 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { IoMdCart } from "react-icons/io";
 import { FaRegHeart } from "react-icons/fa";
 import { useEffect, useState } from "react";
 import { getStoredList, getStoredWishList } from "../utility/addToDatabase";
 
 const Navbar = () => {
+  const location = useLocation();
+  const isHome = location.pathname === "/";
+  const isStatistics = location.pathname === "/statistics";
   const navbarLinks = (
     <>
       <li>
@@ -34,7 +37,15 @@ const Navbar = () => {
   }, [wishListCount]);
 
   return (
-    <div>
+    <div
+      className={` top-0 w-full z-10 md:mx-3 mx-auto ${
+        isHome
+          ? "bg-[#9538E2] rounded-t-lg rounded-b-lg mx-3 px-10"
+          : isStatistics
+          ? "bg-white"
+          : "bg-gray-100"
+      }`}
+    >
       <div className="navbar container mx-auto py-4">
         <div className="navbar-start">
           <div className="dropdown">
