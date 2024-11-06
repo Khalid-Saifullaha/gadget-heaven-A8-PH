@@ -1,6 +1,6 @@
 ## Gadget Heaven
 
--Live link: https://lambent-maamoul-585c62.netlify.app/
+- #Live link: https://lambent-maamoul-585c62.netlify.app/
 
 -Requirement: https://github.com/ProgrammingHero1/B10-A8-gadget-heaven/blob/main/Batch-10_Assignment-08.pdf?fbclid=IwY2xjawGYRj9leHRuA2FlbQIxMAABHVz_zkyagFRbNT0PLikkGQViMZGV9rTMzukHFH1tdj_LENpX-tSCWF7bcQ_aem_xRbpo0Nx0DKKjtpOjfagZA
 
