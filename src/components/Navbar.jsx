@@ -38,9 +38,9 @@ const Navbar = () => {
 
   return (
     <div
-      className={` top-0 w-full z-10 md:mx-3 mx-auto ${
+      className={`container mx-auto top-0 z-10 ${
         isHome
-          ? "bg-[#9538E2] rounded-t-lg rounded-b-lg mx-3 px-10"
+          ? "bg-[#9538E2] px-10"
           : isStatistics
           ? "bg-white"
           : "bg-gray-100"
