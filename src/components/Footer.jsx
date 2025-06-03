@@ -1,68 +1,180 @@
-import Heading from "./Heading";
+import { FaTwitter, FaYoutube, FaFacebookF } from "react-icons/fa"; // Using react-icons
+
+// Assuming your Heading component might look something like this or is styled elsewhere.
+// If you don't have it or it's very different, this part might need adjustment.
+const Heading = ({
+  title,
+  subtitle,
+  titleClassName,
+  subtitleClassName,
+  containerClassName,
+}) => {
+  return (
+    <div className={containerClassName || "text-center mb-8"}>
+      <h2 className={titleClassName || "text-3xl font-bold text-gray-900"}>
+        {title}
+      </h2>
+      {subtitle && (
+        <p className={subtitleClassName || "mt-2 text-md text-gray-600"}>
+          {subtitle}
+        </p>
+      )}
+    </div>
+  );
+};
 
 const Footer = () => {
+  const primaryColor = "#9538E2"; // Your primary color
+
+  // Placeholder links - replace with your actual URLs
+  const socialLinks = {
+    twitter: "https://twitter.com/yourprofile",
+    youtube: "https://youtube.com/yourchannel",
+    facebook: "https://facebook.com/yourpage",
+  };
+
+  const footerLinkStyle = `hover:text-[${primaryColor}] transition-colors duration-300 ease-in-out`;
+  // Note: For dynamic hover colors like this with Tailwind, true JIT mode might be needed,
+  // or you might prefer inline styles for the hover effect as shown below for broader compatibility.
+
   return (
-    <div>
-      <section className=" bg-white mx-auto mt-16 py-8">
+    <div className="bg-slate-900 text-gray-400">
+      {" "}
+      {/* Dark background for the footer */}
+      <section className="container mx-auto pt-16 pb-8 px-4 sm:px-6 lg:px-8">
+        {/* Re-integrating a styled Heading section if desired */}
         <Heading
-          title={`Gadget Heaven`}
-          subtitle={`Leading the way in cutting-edge technology and innovation.`}
-        ></Heading>
-        <div className="divider container mx-auto"></div>
-        <footer className="footer flex justify-between px-2  py-10 container mx-auto   ">
-          <nav className="mx-auto">
-            <h6 className="footer-title">Services</h6>
-            <a className="link link-hover">Branding</a>
-            <a className="link link-hover">Design</a>
-            <a className="link link-hover">Marketing</a>
-            <a className="link link-hover">Advertisement</a>
+          title="Gadget Heaven"
+          subtitle="Leading the way in cutting-edge technology and innovation."
+          containerClassName="mb-12 text-center"
+          titleClassName={`text-3xl sm:text-4xl font-bold text-white`}
+          subtitleClassName={`mt-3 text-lg text-gray-300`}
+        />
+
+        {/* Divider */}
+        <div className="border-t border-slate-700 mb-12"></div>
+
+        <footer className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 text-sm">
+          {/* Column 1: Brand/About */}
+          <div className="sm:col-span-2 lg:col-span-1">
+            <h6
+              className="font-semibold mb-4 uppercase tracking-wider"
+              style={{ color: primaryColor }} // Using primary color for this title
+            >
+              Gadget Heaven
+            </h6>
+            <p className="mb-4">
+              Your one-stop shop for the latest and greatest in tech. We are
+              committed to providing top-quality gadgets and exceptional
+              customer service.
+            </p>
+          </div>
+
+          {/* Column 2: Services */}
+          <nav>
+            <h6 className="font-semibold text-white mb-4 uppercase tracking-wider">
+              Services
+            </h6>
+            <ul className="space-y-3">
+              <li>
+                <a href="#" className={footerLinkStyle}>
+                  Branding
+                </a>
+              </li>
+              <li>
+                <a href="#" className={footerLinkStyle}>
+                  Design
+                </a>
+              </li>
+              <li>
+                <a href="#" className={footerLinkStyle}>
+                  Marketing
+                </a>
+              </li>
+              <li>
+                <a href="#" className={footerLinkStyle}>
+                  Advertisement
+                </a>
+              </li>
+            </ul>
           </nav>
-          <nav className="mx-auto">
-            <h6 className="footer-title">Company</h6>
-            <a className="link link-hover">About us</a>
-            <a className="link link-hover">Contact</a>
-            <a className="link link-hover">Jobs</a>
-            <a className="link link-hover">Press kit</a>
+
+          {/* Column 3: Company */}
+          <nav>
+            <h6 className="font-semibold text-white mb-4 uppercase tracking-wider">
+              Company
+            </h6>
+            <ul className="space-y-3">
+              <li>
+                <a href="#" className={footerLinkStyle}>
+                  About us
+                </a>
+              </li>
+              <li>
+                <a href="#" className={footerLinkStyle}>
+                  Contact
+                </a>
+              </li>
+              <li>
+                <a href="#" className={footerLinkStyle}>
+                  Jobs
+                </a>
+              </li>
+              <li>
+                <a href="#" className={footerLinkStyle}>
+                  Press kit
+                </a>
+              </li>
+            </ul>
           </nav>
-          <nav className="mx-auto">
-            <h6 className="footer-title">Social</h6>
-            <div className="grid grid-flow-col gap-4">
-              <a>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  className="fill-current"
-                >
-                  <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
-                </svg>
+
+          {/* Column 4: Social */}
+          <nav>
+            <h6 className="font-semibold text-white mb-4 uppercase tracking-wider">
+              Connect With Us
+            </h6>
+            <div className="flex space-x-5">
+              <a
+                href={socialLinks.twitter}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Twitter"
+                className={`text-gray-400 hover:text-[${primaryColor}] transition-colors duration-300`}
+              >
+                <FaTwitter size={22} />
               </a>
-              <a>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  className="fill-current"
-                >
-                  <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
-                </svg>
+              <a
+                href={socialLinks.youtube}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="YouTube"
+                className={`text-gray-400 hover:text-[${primaryColor}] transition-colors duration-300`}
+              >
+                <FaYoutube size={22} />
               </a>
-              <a>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  className="fill-current"
-                >
-                  <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
-                </svg>
+              <a
+                href={socialLinks.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                className={`text-gray-400 hover:text-[${primaryColor}] transition-colors duration-300`}
+              >
+                <FaFacebookF size={22} />
               </a>
             </div>
+            <p className="mt-6 text-xs">
+              Stay updated with our latest news and offers!
+            </p>
           </nav>
         </footer>
+
+        {/* Bottom Bar with Copyright */}
+        <div className="mt-12 pt-8 border-t border-slate-700 text-center">
+          <p className="text-sm text-gray-500">
+            &copy; {new Date().getFullYear()} Gadget Heaven. All Rights
+            Reserved.
+          </p>
+        </div>
       </section>
     </div>
   );
