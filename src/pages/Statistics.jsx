@@ -38,43 +38,42 @@ const Statistics = () => {
   ];
   return (
     <div className="">
-      <div className="bg-[#9538E2] text-white h-56 rounded-xl">
+      <div className="bg-[#9538E2] text-white h-56 rounded-xl ">
         <Heading title={"Statistics"}></Heading>
         <p className="text-white text-center">
           Explore the latest gadgets that will take your experience to the next
           level. From smart devices to the coolest accessories, we have it all!
         </p>
-
-        <div className="flex justify-center mt-20">
-          <div style={{ width: "80%", height: 150 }}>
-            <ResponsiveContainer width="100%" height="100%">
-              <BarChart
-                data={data}
-                margin={{
-                  top: 20,
-                  right: 30,
-                  left: 20,
-                  bottom: 5,
-                }}
-              >
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="name" />
-                <YAxis />
-                <Tooltip />
-                <Legend />
-                <Bar dataKey="pv" stackId="a" fill="#8884d8" />
-                <Bar dataKey="uv" stackId="a" fill="#82ca9d" />
-                <Line
-                  type="monotone"
-                  dataKey="price"
-                  stroke="#FF5733"
-                  strokeWidth={2}
-                  dot={{ r: 3 }}
-                  name="Price"
-                />
-              </BarChart>
-            </ResponsiveContainer>
-          </div>
+      </div>
+      <div className="flex justify-center mt-20">
+        <div style={{ width: "80%", height: 450 }}>
+          <ResponsiveContainer width="100%" height="100%">
+            <BarChart
+              data={data}
+              margin={{
+                top: 20,
+                right: 30,
+                left: 20,
+                bottom: 5,
+              }}
+            >
+              <CartesianGrid strokeDasharray="3 3" />
+              <XAxis dataKey="name" />
+              <YAxis />
+              <Tooltip />
+              <Legend />
+              <Bar dataKey="pv" stackId="a" fill="#8884d8" />
+              <Bar dataKey="uv" stackId="a" fill="#82ca9d" />
+              <Line
+                type="monotone"
+                dataKey="price"
+                stroke="#FF5733"
+                strokeWidth={2}
+                dot={{ r: 3 }}
+                name="Price"
+              />
+            </BarChart>
+          </ResponsiveContainer>
         </div>
       </div>
     </div>
